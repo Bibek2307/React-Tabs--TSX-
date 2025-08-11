@@ -36,8 +36,12 @@ This app is designed purely for **visualization purposes** to see how a YouTube 
    ```bash
    git clone https://github.com/your-username/react-tabs-yt-template.git
    cd react-tabs-yt-template
-2. npm install
-3. npm run dev
+   ```
+2. ```bash
+    npm install
+    ```
+3. ```bash
+    npm run dev
 
 ## 📸 Usage
 - Click the camera icon on the banner or profile picture to upload your own image.
