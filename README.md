@@ -26,7 +26,7 @@ This app is designed purely for **visualization purposes** to see how a YouTube 
 - React (Functional Components)
 - TypeScript
 - React Hooks: `useState`
-- HTML, CSS
+- HTML, TailwindCSS
 - File input for image uploads
 
 
