@@ -1,69 +1,51 @@
-# React + TypeScript + Vite
+# 🎬 React Tabs – YouTube Channel Template (TypeScript)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A **React + TypeScript frontend project** that simulates a YouTube channel profile page.  
+It features **tab navigation** for sections like Home, About, Projects, Courses, and Contact, along with image upload options for the **channel banner** and **profile icon**.  
+This app is designed purely for **visualization purposes** to see how a YouTube channel might look before actually creating one.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 📌 **YouTube-like channel layout**
+- 🏠 **Tabs Navigation**:
+  - Home
+  - About
+  - Projects
+  - Courses
+  - Contact
+- 📷 **Image Uploads**:
+  - Change channel banner
+  - Change profile icon
+- 🖼 **Live Preview** of uploaded images
+- 🎨 Styled layout with placeholder images for quick prototyping
+- 🔄 Fully **frontend-only** – no backend required
+- 🛡 **TypeScript** for type safety and better code maintainability
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- React (Functional Components)
+- TypeScript
+- React Hooks: `useState`
+- HTML, CSS
+- File input for image uploads
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## 🚀 Getting Started
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/your-username/react-tabs-yt-template.git
+   cd react-tabs-yt-template
+2. npm install
+3. npm run dev
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📸 Usage
+- Click the camera icon on the banner or profile picture to upload your own image.
+- Navigate between Home, About, Projects, Courses, and Contact using the tabs.
+- Visualize how your YouTube channel might look with custom branding.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 📌 Notes
+- This is only a UI prototype. No videos or actual channel data are loaded.
+- Uploaded images are not stored permanently — refreshing the page resets them.
+- Ideal for testing YouTube-like layouts or showcasing frontend skills with TypeScript.
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
