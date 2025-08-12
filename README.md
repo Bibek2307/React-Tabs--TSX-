@@ -4,6 +4,10 @@ A **React + TypeScript frontend project** that simulates a YouTube channel profi
 It features **tab navigation** for sections like Home, About, Projects, Courses, and Contact, along with image upload options for the **channel banner** and **profile icon**.  
 This app is designed purely for **visualization purposes** to see how a YouTube channel might look before actually creating one.
 
+![Project Preview](./preview2.png)
+
+---
+
 ## ✨ Features
 
 - 📌 **YouTube-like channel layout**
